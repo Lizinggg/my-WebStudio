@@ -1,0 +1,31 @@
+.feature-list {
+  display: flex;
+}
+.feature-list .item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.feature-list {
+  .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+  }
+}
+.icon-antena {
+  width: 70px;
+  height: 70px;
+  background-position: center;
+}
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}

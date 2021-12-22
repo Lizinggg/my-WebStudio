@@ -1,0 +1,31 @@
+.text-hover {
+  position: absolute;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  background: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  transform: translateY(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, opacity;
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+    cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s, 0s;
+}
+.card-inf:hover .text-hover {
+  transform: translateY(0);
+}
+
+.card-inf-wrap {
+  position: relative;
+  overflow: hidden;
+}

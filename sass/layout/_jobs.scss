@@ -1,0 +1,61 @@
+.job-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.job-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.job-list {
+  .item {
+    position: relative;
+  }
+}
+.item-monoblock::after {
+  position: absolute;
+  content: "ДЕСТОПНЫЕ ПРИЛОЖЕНИЯ";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: var(--primary-bg-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+}
+.item-notebook::after {
+  position: absolute;
+  content: "МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: var(--primary-bg-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+}
+.item-tablet::after {
+  position: absolute;
+  content: "ДИЗАЙНЕРСКИЕ РЕШЕНИЯ";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: var(--primary-bg-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+}

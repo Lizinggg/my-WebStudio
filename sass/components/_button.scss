@@ -1,0 +1,26 @@
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 11px 32px;
+  min-width: 200px;
+}
+.button-nav {
+  .link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}

@@ -1,6 +1,6 @@
-.feature-list {
-  display: flex;
-}
+// .feature-list {
+//   display: flex;
+// }
 .feature-list .item {
   width: 270px;
   &:not(:last-child) {
@@ -21,7 +21,7 @@
   background-position: center;
 }
 .content-box {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;

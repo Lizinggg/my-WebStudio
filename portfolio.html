@@ -19,38 +19,102 @@
 </head>
 
 <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
         <nav class="container main-nav">
             <a href="" class="logo">
-                Web<span class="logo-head">Studio</span>
+                Web<span class="logo-dark">Studio</span>
             </a>
-
+    
             <ul class="site-nav list">
-                <li class="item"> <a href="./index.html" class="link ">Студия</a> </li>
-                <li class="item page-item"> <a href="./portfolio.html" class="link curretn">Портфолио</a> </li>
+                <li class="item page-item"> <a href="./index.html" class="link">Студия</a> </li>
+                <li class="item"> <a href="./portfolio.html" class=" curretn link">Портфолио</a> </li>
                 <li class="item"> <a href="" class="link">Контакты</a> </li>
             </ul>
-
+    
             <ul class="contacts list">
                 <li class="item">
-                    <a href="mailto:info@devstudio.com" class="link">
+                    <a href="mailto:info@devstudio.com" class="contacts-link link">
                         <svg class="mail-icon" width="16" height="12">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li class="item">
-                    <a href="tel:+380961111111" class="link">
+                    <a href="tel:+380961111111" class="contacts-link link">
                         <svg class="mail-icon" width="10" height="16">
                             <use href="./images/icons.svg#telephone"></use>
                         </svg>
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-    </header> -->
+            <!-- <div class="container"> -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+    
+    
+    
+            <div class="menu-container js-menu-container mob-menu-top" id="mobile-menu">
+                <div class="container">
+                    <button class="menu-toggle js-close-menu">
+                        <svg width="40" height="40">
+                            <use href="images/icons.svg#menu-close"></use>
+    
+                        </svg>
+                    </button>
+    
+                    <ul class="mobile-menu">
+                        <li class="mob-menu-item page-item"> <a href="" class="curretn mob-menu-link link ">Студия</a> </li>
+                        <li class="mob-menu-item"> <a href="./portfolio.html" class="marker mob-menu-link link ">Портфолио</a> </li>
+                        <li class="mob-menu-item"> <a href="" class="mob-menu-link link">Контакты</a> </li>
+                    </ul>
+    
+                    <div class="mob-menu-bottom">
+                        <ul class="mob-menu-contacts list">
+                            <li class="item mob-tell">
+                                <a href="tel:+380961111111" class="link mob-menu-tell">
+    
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="item">
+                                <a href="mailto:info@devstudio.com" class="link mob-menu-mail">
+    
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mob-social-list">
+                            <li class="mob-social-item item">
+                                <a href="" class="mob-social-link link">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="mob-social-item">
+                                <a href="" class="mob-social-link">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mob-social-item">
+                                <a href="" class="mob-social-link">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mob-social-item">
+                                <a href="" class="mob-social-link">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+    </header>
     <main>
-        <!-- <section class="section test-portfolio">
+        <section class="section test-portfolio">
 <div class="container">
  <h1 class="section-title visually-hidden">Портфолио</h1>
 <ul class="button-nav list filter">
@@ -60,8 +124,8 @@
 <li class="item"><button type="button" class="filter-button link">Дизайн</button></li>
 <li class="item"><button type="button" class="filter-button link">Маркетинг</button></li>
 </ul>
-</div> -->
-<div class="container">
+<!-- </div> -->
+<!-- <div class="container"> -->
 <h2 class="section-title visually-hidden">Примеры работ</h2>
 <ul class="card-set">
     <li class="item ">
@@ -204,7 +268,7 @@
 </div>
 </section>
     </main>
-<!-- <footer class="page-footer">
+<footer class="page-footer">
     <div class="container container-footer">
         <div class="address-footer">
             <a href="" class="logo">
@@ -262,8 +326,9 @@
             </form>
         </div>
     </div>
-</footer> -->
+</footer>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>

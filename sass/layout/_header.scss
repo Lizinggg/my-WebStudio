@@ -105,6 +105,7 @@
 }
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -203,7 +204,9 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.02em;
-
+  .marker {
+    color: var(--accent-color);
+  }
   color: #212121;
 }
 .mob-menu-contacts {

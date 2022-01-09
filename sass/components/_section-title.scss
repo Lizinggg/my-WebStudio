@@ -1,6 +1,8 @@
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;

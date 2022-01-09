@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
         <nav class="container main-nav">
             <a href="" class="logo">
                 Web<span class="logo-dark">Studio</span>
@@ -46,17 +46,73 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="open-menu-mobile-btn">
+                <svg class="menu-mobile" width="40" height="40">
+                    <use href="images/icons.svg#menu-mobile"> </use>
+                </svg>
+            </button>
         </nav>
+       <div class="mob-menu is-hidden">
+           <div class="container">
+               <div class="mob-menu-top">
+        <button type="button" class="cls-menu-mobile-btn">
+            <svg class="cls-menu-mobile" width="18" height="18">
+                <use href="images/icons.svg#menu-close"> </use>
+            </svg>
+        </button>
+        <ul class="mob-menu-list">
+            <li class="mob-menu-item page-item"> <a href="" class="mob-menu-link link">Студия</a> </li>
+            <li class="mob-menu-item"> <a href="./portfolio.html" class="mob-menu-link link">Портфолио</a> </li>
+            <li class="mob-menu-item"> <a href="" class="mob-menu-link link">Контакты</a> </li>
+        </ul>
+        </div>
+        <div class="mob-menu-bottom">
+        <ul class="mob-menu-contacts list">
+            <li class="item mob-tell">
+                <a href="tel:+380961111111" class="link mob-menu-tell">
+            
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="item">
+                <a href="mailto:info@devstudio.com" class="link mob-menu-mail">
 
-    </header> -->
+                    info@devstudio.com</a>
+                </li>
+        </ul>
+        <ul class="mob-social-list">
+            <li class="mob-social-item item">
+                <a href="" class="mob-social-link link">
+                    Instagram
+                </a>
+            </li>
+            <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                    Twitter
+                </a>
+            </li>
+            <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                    Facebook
+                </a>
+            </li>
+            <li class="mob-social-item">
+                <a href="" class="mob-social-link">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+        </div>
+        </div>
+       </div>
+    </header>
     <main>
-        <!-- <section class="hero overlay">
+        <section class="hero overlay">
             <div>
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="button">Заказать услугу</button>
-            </div> -->
+            </div>
             <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
+                <div class="modal ">
                     <button data-modal-close type="button" class="button-close">
                         <svg class="close" width="15" height="15">
                             <use href="./images/icons.svg#close-modal"></use>
@@ -116,8 +172,8 @@
         <section class="section-feature">
             <div class="container">
                 <h2 class="section-title visually-hidden">Наши преимущества</h2>
-                <ul class="">
-                    <li class="item">
+                <ul class="feature-list">
+                    <li class="content-item">
                         <div class="content-box">
                             <svg class="icon-antena">
                                 <use href="./images/icons.svg#antenna"></use>
@@ -129,7 +185,7 @@
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li class="item">
+                    <li class="content-item">
                         <div class="content-box">
                             <svg class="icon-antena">
                                 <use href="./images/icons.svg#clock"></use>
@@ -140,7 +196,7 @@
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
-                    <li class="item">
+                    <li class="content-item">
                         <div class="content-box">
                             <svg class="icon-antena">
                                 <use href="./images/icons.svg#diagram"></use>
@@ -151,7 +207,7 @@
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
-                    <li class="item">
+                    <li class="content-item">
                         <div class="content-box">
                             <svg class="icon-antena">
                                 <use href="./images/icons.svg#astronaut"></use>
@@ -181,7 +237,7 @@
                 </ul>
             </div>
         </section> -->
-        <!-- <section class="section section-bg">
+        <section class="section section-bg">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
@@ -335,8 +391,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section">
+        </section>
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="customers-list">
@@ -396,9 +452,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
         <div class="container container-footer">
             <div class="address-footer">
                 <a href="" class="logo">
@@ -406,10 +462,10 @@
                 </a>
                 <address class="address link">г. Киев, пр-т Леси Украинки, 26</address>
                 <ul>
-                    <li>
+                    <li class="footer-contacts__item">
                         <a href="mailto:info@example.com" class="contacts-footer">info@example.com</a>
                     </li>
-                    <li>
+                    <li class="footer-contacts__item">
                         <a href="tel:+380991111111" class="contacts-footer">+38 099 111 11 11</a>
                     </li>
                 </ul>
@@ -452,12 +508,16 @@
                 <form action="#" class="sub-form">
                     <input type="email" class="sub-input" name="email" placeholder="E-mail">
                     <button type="submit" class="sub-btn">Подписаться
+                        <svg class="sub-btn-icon" width="24" height="24">
+                            <use href="images/icons.svg#icon-send" class="sub-btn-icon-fill"> </use>
+                        </svg>
                     </button>
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

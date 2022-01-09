@@ -1,16 +1,33 @@
 .customers-list {
   display: flex;
-  padding: 0px;
-  margin: 0px;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
 }
 .customers-item {
   width: 170px;
   height: 92px;
-   &:not(:last-child) {
-   margin-right: 30px;
-   }
-}
 
+  flex-basis: calc(100% / 2 - 30px);
+  margin-bottom: 30px;
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
+    margin-right: 30px;
+    &:nth-child(3n) {
+      margin-right: -30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
 
 .customers-link {
   display: flex;
@@ -24,12 +41,11 @@
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   &:focus,
-   &:hover {
+  &:focus,
+  &:hover {
     border-color: var(--accent-color);
     fill: var(--accent-color);
-   }
-
+  }
 }
 
 .customers-icon {

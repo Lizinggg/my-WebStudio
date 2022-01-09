@@ -1,7 +1,7 @@
-.subscription {
-  width: 50%;
-  margin-left: 93px;
-}
+// .subscription {
+//   width: 50%;
+//   margin-left: 93px;
+// }
 .sub-title {
   font-size: 14px;
   line-height: 1.14;
@@ -12,7 +12,14 @@
   margin-top: 0;
 }
 .sub-input {
-  width: 358px;
+  width: 290px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -21,9 +28,12 @@
   border-radius: 4px;
   outline: none;
   padding-left: 16px;
-  margin-right: 12px;
+  // margin-right: 12px;
   font-size: 16px;
   line-height: 1.25;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 
   align-items: center;
   letter-spacing: 0.03em;
@@ -43,9 +53,19 @@
 }
 
 .sub-btn {
+  // width: 200px;
   font-size: 16px;
   line-height: 1.8;
-
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 50px;
+  }
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -55,4 +75,18 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 29px;
+}
+.sub-btn-icon {
+  margin-left: 10px;
+}
+.sub-btn-icon-fill {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+.sub-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: center;
+  }
 }

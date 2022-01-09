@@ -1,10 +1,20 @@
 footer {
   background-color: #2f303a;
   align-items: baseline;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .container-footer {
-  display: flex;
+  display: block;
   align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .page-footer {
@@ -38,9 +48,18 @@ footer {
 .contacts-footer .item:not(:last-child) {
   margin-right: 9px;
 }
-.media {
-  margin-left: 70px;
+.footer-contacts__item {
+  margin-top: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+  &:not(:first-child) {
+    margin-bottom: 60px;
+  }
 }
+// .media {
+//   // margin-left: 70px;
+// }
 .comein {
   padding: 0px;
   margin-bottom: 20px;
@@ -57,7 +76,8 @@ footer {
 .footer-social-list {
   display: flex;
   padding: 0px;
-  margin: 0px;
+  // margin: 0px;
+  margin-bottom: 60px;
 
   justify-content: center;
 }

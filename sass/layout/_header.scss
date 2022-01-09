@@ -14,7 +14,7 @@
   color: #fff;
 }
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 .contacts .item + .item {
@@ -42,9 +42,12 @@
 .main-nav {
   display: flex;
   align-items: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  margin: 0;
 }
 .site-nav {
-  display: flex;
+  display: none;
   margin-left: 93px;
 }
 .filter {
@@ -100,4 +103,90 @@
 .mail-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+.open-menu-mobile-btn {
+  margin-left: auto;
+  padding: 0;
+}
+.mob-menu {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.cls-menu-mobile-btn {
+  display: block;
+  margin-left: auto;
+  padding-bottom: 8px;
+}
+.mob-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-menu-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+.mob-menu-contacts {
+  display: block;
+
+  margin-bottom: 64px;
+}
+.mob-menu-tell {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.mob-tell {
+  margin-bottom: 32px;
+}
+.mob-menu-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1/16;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.mob-social-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.mob-social-list {
+  display: flex;
+  bottom: 0;
+}
+.mob-social-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }

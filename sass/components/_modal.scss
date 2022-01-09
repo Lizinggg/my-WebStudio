@@ -15,8 +15,11 @@
 }
 .modal {
   position: absolute;
-  width: 450px;
-
+  width: 290px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding: 40px;
+  }
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -161,7 +164,11 @@
 .check-text {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;

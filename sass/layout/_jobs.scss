@@ -1,7 +1,16 @@
 .job-list {
-  display: flex;
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.job-title {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .job-list .item:not(:last-child) {
   margin-right: 30px;

@@ -13,8 +13,9 @@
   background-color: var(--accent-color);
 }
 .button-nav {
-  .item:not(:last-child) {
+  .item {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 .page-item {

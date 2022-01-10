@@ -33,6 +33,12 @@ footer {
 .address-text {
   margin-right: auto;
 }
+.address-footer {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
 .contacts-footer {
   margin-right: 0;
   display: block;
@@ -53,13 +59,10 @@ footer {
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
-  &:not(:first-child) {
-    margin-bottom: 60px;
-  }
 }
-// .media {
-//   // margin-left: 70px;
-// }
+.media {
+  margin-bottom: 60px;
+}
 .comein {
   padding: 0px;
   margin-bottom: 20px;
@@ -77,7 +80,6 @@ footer {
   display: flex;
   padding: 0px;
   // margin: 0px;
-  margin-bottom: 60px;
 
   justify-content: center;
 }

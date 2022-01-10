@@ -862,16 +862,16 @@ p {
 @media screen and (min-width: 768px) {
   .content-item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-item {
     flex-basis: calc(100% / 4 - 30px);
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -879,15 +879,15 @@ p {
   .feature-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
-    margin-right: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature-list {
-    margin-bottom: -30px;
-    margin-right: -30px;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -974,30 +974,32 @@ p {
 
 .team-list {
   text-align: center;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 
 @media screen and (min-width: 768px) {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
   }
-}
-
-.team-list .item {
-  margin-bottom: 30px;
 }
 
 .team-list .item img {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .team-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team-list .item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -1069,15 +1071,15 @@ p {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .customers-item {
   width: 170px;
   height: 92px;
-  margin-bottom: 30px;
-  margin-right: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
   flex-basis: calc(100% / 2 - 30px);
 }
 
@@ -1198,8 +1200,10 @@ footer {
   }
 }
 
-.media {
-  margin-bottom: 60px;
+@media screen and (max-width: 1200px) {
+  .media {
+    margin-bottom: 60px;
+  }
 }
 
 .comein {
@@ -1372,8 +1376,8 @@ footer {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -1381,15 +1385,17 @@ footer {
   width: 100%;
 }
 
-.card-set .item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+  .card-set .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .card-set .item {
     flex-basis: calc(100% / 2 - 30px);
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -1466,8 +1472,8 @@ footer {
 }
 
 .button-nav .item {
-  margin-right: 8px;
-  margin-bottom: 15px;
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .page-item {

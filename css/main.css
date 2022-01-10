@@ -445,7 +445,7 @@ p {
 .contacts {
   display: none;
   margin-left: auto;
-  align-items: center;
+  align-items: left;
   color: var(--primamy-text-color);
   font-weight: 500;
   font-size: 14px;
